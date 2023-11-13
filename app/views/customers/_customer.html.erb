@@ -1,13 +1,17 @@
-<div class="column is-one-fifth">
+<div class="tile is-parent">
   <div class="card p-4">
     <p class="title is-5"><%= customer.full_name %></p>
-    <figure class="card-image">
-      <%= image_tag customer.image %>
-    </figure>
+    <div class="card-image px-4">
+      <figure class="image is-24by3">
+        <%= image_tag customer.image %>
+      </figure>
+    </div>
     <div class="card-content">
-      <p><%= customer.phone_num %></p>
-      <p><%= customer.email %></p>
-      <p><%= customer.notes %></p>
+      <div class="content">
+        <p><%= customer.phone_num %></p>
+        <p><%= customer.email %></p>
+        <p><%= customer.notes %></p>
+      </div>
     </div>
   </div>
 </div>
